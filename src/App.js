@@ -11,6 +11,10 @@ import YoutubeList from './components/youtube/YoutubeList';
 import Button from './components/button/Button';
 import Counter from './components/count/Counter';
 import Person from './components/person/Person';
+import Main from './components/Main';
+import TestSass from './components/TestSass/TestSass';
+import Student from './components/Student';
+import Teacher from './components/Teacher';
 
 //parent component
 function App() {
@@ -24,13 +28,20 @@ function App() {
       <Footer></Footer> */}
       {/* <Toggle></Toggle>
       <State></State> */}
-      <YoutubeItem image="https://webaffiliatevn.com/wp-content/uploads/2020/08/IMGLOGO_Primary_CMYK_Blue_Rel_webready.jpg" title="a"></YoutubeItem>
-      <YoutubeList></YoutubeList>
-      <Button>Xac nhan</Button>
+      {/* <YoutubeItem image="https://webaffiliatevn.com/wp-content/uploads/2020/08/IMGLOGO_Primary_CMYK_Blue_Rel_webready.jpg" avatar="https://webaffiliatevn.com/wp-content/uploads/2020/08/IMGLOGO_Primary_CMYK_Blue_Rel_webready.jpg" title="a"></YoutubeItem> */}
+      {/* <YoutubeList></YoutubeList> */}
+      {/* <Button>Xac nhan</Button> */}
+      {/* <Counter></Counter> */}
+      {/* <Person style="red" name="Quần jean" type="Skinny" color ="Đen" size = "L">Person1</Person> */}
+      {/* <Person name="Váy" type="váy công chúa" color ="Trắng" size = "M">Person2</Person> */}
+      {/* <Header></Header>
+      <Footer></Footer>
+      <Main></Main> */}
+      {/* <TestSass></TestSass> */}
+      {/* <Student></Student> */}
+      {/* <Teacher/> */}
+      {/* <Main/> */}
       <Counter></Counter>
-      <Person name="Quần jean" type="Skinny" color ="Đen" size = "L">Person1</Person>
-      <Person name="Váy" type="váy công chúa" color ="Trắng" size = "M">Person2</Person>
-     
     </div>
   );
 }

@@ -1,12 +1,11 @@
 import React from 'react'
-import Button from './button/Button'
-
+// import './Header.css'
+import styles from './Header.module.css'
 const Header = () => {
   return (
-    <div>
-      <h1>Header</h1>
-      <Button>Đăng nhập</Button>
-    </div>
+
+    <h1 className=' text-blue-500 font-bold text-lg'>Header</h1>
+
   )
 }
 

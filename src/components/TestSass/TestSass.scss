@@ -1,0 +1,26 @@
+//bien toan cuc
+
+@mixin test($a) {
+    @content;
+    color: black;
+    font-size: $a;
+}
+
+.cha {
+    color: red;
+    // font-size: 20px;
+    font-weight: 800;
+
+    @include test(50px){
+
+    } &__con {
+        font-size: 36px;
+        color: blue;
+
+        &-chau {}
+    }
+}
+
+.me {
+    @extend .cha__con;
+}

@@ -7,7 +7,7 @@ const YoutubeItem = (props) => {
         <img src={props.image} alt="" />
       </div>
       <div className="youtube-footer">
-        <img src={props.avatar} alt="" className="youtube-avatar" />
+        <img src={props.avatar} alt="avt" className="youtube-avatar" />
         <div className="youtube-info">
           <h3 className="youtube-title">
             {props.title || "This is example of title"}

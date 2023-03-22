@@ -18,7 +18,7 @@ const Counter = () => {
     return (
         <div>
             <p>You clicked {count} times</p>
-            <button onClick={handleCount}>
+            <button onClick={() => handleCount()}>
                 Click me
             </button>
         </div>
