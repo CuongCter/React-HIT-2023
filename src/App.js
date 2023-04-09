@@ -15,6 +15,10 @@ import Main from './components/Main';
 import TestSass from './components/TestSass/TestSass';
 import Student from './components/Student';
 import Teacher from './components/Teacher';
+import Effect from './components/useEffect/Effect';
+import Photos from './components/photo/Photo';
+import EffectLayout from './components/useEffect/EffectLayout';
+import Login from './components/login/Login';
 
 //parent component
 function App() {
@@ -41,7 +45,11 @@ function App() {
       {/* <Student></Student> */}
       {/* <Teacher/> */}
       {/* <Main/> */}
-      <Counter></Counter>
+      {/* <Counter></Counter> */}
+      {/* <Effect></Effect> */}
+      {/* <Photos></Photos> */}
+      {/* <EffectLayout></EffectLayout> */}
+      <Login></Login>
     </div>
   );
 }

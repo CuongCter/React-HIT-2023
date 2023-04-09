@@ -1,0 +1,11 @@
+.button {
+    background-color: blue;
+
+    @include tablet {
+        background-color: yellow;
+    }
+
+    @include mobile {
+        background-color: red;
+    }
+}

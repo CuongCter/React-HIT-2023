@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../button/Button'
-import './person.scss'
+
 const Person = (props) => {
     return (
         // <div className='main'>
@@ -17,7 +17,7 @@ const Person = (props) => {
         //     </ul>
         //     <hr></hr> */}
         // </div>
-        <div class="error ">
+        <div class="error">
             Cha
             <div className="error-serious">
                 Con

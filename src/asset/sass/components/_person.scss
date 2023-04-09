@@ -1,0 +1,15 @@
+.error {
+    color: blue;
+    font-size: 60px;
+    font-weight: 700;
+
+    @include tablet {
+        color: yellow;
+    }
+
+    @include mobile {
+        color: red;
+    }
+
+
+}
