@@ -19,6 +19,18 @@ import Effect from './components/useEffect/Effect';
 import Photos from './components/photo/Photo';
 import EffectLayout from './components/useEffect/EffectLayout';
 import Login from './components/login/Login';
+import UserList from './components/userList/UserList';
+import UseRef from './components/useRef/UseRef';
+import StopWatch from './components/stopWatch/StopWatch';
+import Input from './components/input/Input';
+import UseMemo from './components/useMemo/UseMemo';
+import UseCallback from './components/useCallback/UseCallback';
+import Form from './components/form/Form';
+import Form2 from './components/form/Form2';
+import SignUpForm from './components/form/SignUpForm';
+import SignUpFormV2 from './components/form/SignUpFormV2';
+import SignUpFormHook from './components/form/SignUpFormHook';
+import Form1 from './components/form/Form1';
 
 //parent component
 function App() {
@@ -49,7 +61,19 @@ function App() {
       {/* <Effect></Effect> */}
       {/* <Photos></Photos> */}
       {/* <EffectLayout></EffectLayout> */}
-      <Login></Login>
+      {/* <Login></Login> */}
+      {/* <UserList></UserList> */}
+      {/* <UseRef></UseRef> */}
+      {/* <StopWatch></StopWatch> */}
+      {/* <Input></Input> */}
+      {/* <UseMemo></UseMemo> */}
+      {/* <UseCallback></UseCallback> */}
+      {/* <Form></Form> */}
+      {/* <Form2></Form2> */}
+      <SignUpForm></SignUpForm>
+      {/* <SignUpFormV2></SignUpFormV2> */}
+      {/* <SignUpFormHook></SignUpFormHook> */}
+      {/* <Form1></Form1> */}
     </div>
   );
 }
