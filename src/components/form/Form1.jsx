@@ -20,11 +20,11 @@ const Form1 = () => {
     //     setLastname(e.target.value)
     //     // console.log(e.target.value);
     // }
-    // const [values, setValues] = useState({
-    //     firstname: "",
-    //     lastname: "",
-    //     hobby: false
-    // })
+    const [values, setValues] = useState({
+        firstname: "",
+        lastname: "",
+        hobby: false
+    })
     //ojb.property
     //ojb[property]
     const handleInputChange = (e) => {
@@ -40,6 +40,7 @@ const Form1 = () => {
         e.preventDefault();
         console.log(firstname);
         console.log(lastname);
+        
     }
     return (
         <form action={handleSubmit}>
