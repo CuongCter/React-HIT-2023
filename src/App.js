@@ -31,49 +31,46 @@ import SignUpForm from './components/form/SignUpForm';
 import SignUpFormV2 from './components/form/SignUpFormV2';
 import SignUpFormHook from './components/form/SignUpFormHook';
 import Form1 from './components/form/Form1';
+import { Route, Routes } from 'react-router';
+import Home from './Home';
+import About from './About';
+import Nav from './Nav';
+import ContentDetails from './ContentDetails';
 
 //parent component
 function App() {
   return (
     <div className="App">
-      {/* children component */}
-      {/* <Header></Header>
-      <Banner></Banner>
-      <Card></Card>
-      <Content></Content>
-      <Footer></Footer> */}
-      {/* <Toggle></Toggle>
-      <State></State> */}
-      {/* <YoutubeItem image="https://webaffiliatevn.com/wp-content/uploads/2020/08/IMGLOGO_Primary_CMYK_Blue_Rel_webready.jpg" avatar="https://webaffiliatevn.com/wp-content/uploads/2020/08/IMGLOGO_Primary_CMYK_Blue_Rel_webready.jpg" title="a"></YoutubeItem> */}
-      {/* <YoutubeList></YoutubeList> */}
-      {/* <Button>Xac nhan</Button> */}
-      {/* <Counter></Counter> */}
-      {/* <Person style="red" name="Quần jean" type="Skinny" color ="Đen" size = "L">Person1</Person> */}
-      {/* <Person name="Váy" type="váy công chúa" color ="Trắng" size = "M">Person2</Person> */}
-      {/* <Header></Header>
-      <Footer></Footer>
-      <Main></Main> */}
-      {/* <TestSass></TestSass> */}
-      {/* <Student></Student> */}
-      {/* <Teacher/> */}
-      {/* <Main/> */}
-      {/* <Counter></Counter> */}
-      {/* <Effect></Effect> */}
-      {/* <Photos></Photos> */}
-      {/* <EffectLayout></EffectLayout> */}
-      {/* <Login></Login> */}
-      {/* <UserList></UserList> */}
-      {/* <UseRef></UseRef> */}
-      {/* <StopWatch></StopWatch> */}
-      {/* <Input></Input> */}
-      {/* <UseMemo></UseMemo> */}
-      {/* <UseCallback></UseCallback> */}
-      {/* <Form></Form> */}
-      {/* <Form2></Form2> */}
-      <SignUpForm></SignUpForm>
-      {/* <SignUpFormV2></SignUpFormV2> */}
-      {/* <SignUpFormHook></SignUpFormHook> */}
-      {/* <Form1></Form1> */}
+      
+      {/* <Header></Header> */}
+      {/* slug (đường dẫn sau khi được xử lý) or id */}  
+        {/* <Routes>
+          <Route path='/' element={<Header></Header>}>
+              <Route path='/' element={<Home/>}/>
+              <Route path='/about' element={<About/>}></Route>
+              <Route path='/content' element={<Content></Content>}/>
+              <Route path='/content/:slug' element={<ContentDetails></ContentDetails>}/>
+              
+          </Route>
+          <Route path='*' element={<h1>
+              Not Found
+            </h1>}/>
+        </Routes> */}
+        {/* <Nav></Nav> */}
+        {/* <Routes>
+          <Route path='/' element={<Header></Header>}>
+              <Route path='/' element={<Home></Home>}></Route>
+              <Route path='/content' element= {<Content></Content>}></Route>
+              <Route path='/about' element={
+                <div>About</div>
+              }></Route>
+              <Route path='*' element={
+            <div>Not found 404</div>
+          }></Route>
+          </Route>
+          
+        </Routes> */}
+        <About></About>
     </div>
   );
 }

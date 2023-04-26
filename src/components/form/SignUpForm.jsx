@@ -48,13 +48,13 @@ const SignUpForm = () => {
                 <input
                     type="text"
                     id='firstName'
-                    name='firstName'
+                    // name='firstName'
                     placeholder='Enter your first name'
                     className='p-4 rounded-md border border-gray-100'
-                    value={formik.values.firstName}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                // {...formik.getFieldProps('firstName')}
+                    // value={formik.values.firstName}
+                    // onChange={formik.handleChange}
+                    // onBlur={formik.handleBlur}
+                {...formik.getFieldProps('firstName')}
                 />
                 {/* formik.touched.firstName */}
                 {formik.touched.firstName && formik.errors.firstName ? <div className='text-sm text-red-500'>{formik.errors.firstName}</div> : null}
@@ -64,13 +64,13 @@ const SignUpForm = () => {
                 <input
                     type="text"
                     id='lastName'
-                    name='lastName'
-                    placeholder='Enter your first name'
+                    // name='lastName'
+                    placeholder='Enter your last name'
                     className='p-4 rounded-md border border-gray-100'
-                    value={formik.values.lastName}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                // {...formik.getFieldProps('lastName')}
+                    // value={formik.values.lastName}
+                    // onChange={formik.handleChange}
+                    // onBlur={formik.handleBlur}
+                {...formik.getFieldProps('lastName')}
                 />
                 {formik.touched.lastName && formik.errors.lastName ? <div className='text-sm text-red-500'>{formik.errors.lastName}</div> : null}
             </div>
