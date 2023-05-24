@@ -36,41 +36,18 @@ import Home from './Home';
 import About from './About';
 import Nav from './Nav';
 import ContentDetails from './ContentDetails';
+import UseReducer from './components/useReducer/UseReducer';
+import { useSelector } from 'react-redux';
 
 //parent component
 function App() {
+ // const count = useSelector(state => state.counter.count)
+  const {count} = useSelector(state => state.counter)
   return (
     <div className="App">
-      
-      {/* <Header></Header> */}
-      {/* slug (đường dẫn sau khi được xử lý) or id */}  
-        {/* <Routes>
-          <Route path='/' element={<Header></Header>}>
-              <Route path='/' element={<Home/>}/>
-              <Route path='/about' element={<About/>}></Route>
-              <Route path='/content' element={<Content></Content>}/>
-              <Route path='/content/:slug' element={<ContentDetails></ContentDetails>}/>
-              
-          </Route>
-          <Route path='*' element={<h1>
-              Not Found
-            </h1>}/>
-        </Routes> */}
-        {/* <Nav></Nav> */}
-        {/* <Routes>
-          <Route path='/' element={<Header></Header>}>
-              <Route path='/' element={<Home></Home>}></Route>
-              <Route path='/content' element= {<Content></Content>}></Route>
-              <Route path='/about' element={
-                <div>About</div>
-              }></Route>
-              <Route path='*' element={
-            <div>Not found 404</div>
-          }></Route>
-          </Route>
-          
-        </Routes> */}
-        <About></About>
+      {/* <UseReducer></UseReducer> */}
+      <h2>The count from App is: {count}</h2>
+      <Counter></Counter>
     </div>
   );
 }
